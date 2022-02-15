@@ -32,13 +32,6 @@ if [[ $EUID -eq 0 ]]; then
     exit 1
 fi
 
-# internet-connection required
-ping -c1 google.com &>/dev/null
-INTERNET_DISCONNECTED=$?
-if [ "${INTERNET_DISCONNECTED}" != "0" ]; then
-	echo "No internet-connection detected. Exit."
-	exit 0
-fi
 
 # change into actual user-dir
 cd
