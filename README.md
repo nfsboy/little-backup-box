@@ -65,9 +65,9 @@ As there is no manual available anymore, the github-wiki should replace it one d
 	<li>Make sure that your Raspberry Pi is connected to the internet.</li>
 	<li>
 		Run the following command on the Raspberry Pi:<br>
-		<code>curl -sSL https://raw.githubusercontent.com/outdoorbits/little-backup-box/main/install-little-backup-box.sh | bash</code><br>
+		<code>curl -sSL https://raw.githubusercontent.com/nfsboy/little-backup-box/main/install-little-backup-box.sh | bash | bash</code><br>
 		or to save the error-messages during installation to disk: <br>
-		<code>curl -sSL https://raw.githubusercontent.com/outdoorbits/little-backup-box/main/install-little-backup-box.sh | bash  2> install-error.log</code>
+		<code>curl -sSL https://raw.githubusercontent.com/nfsboy/little-backup-box/main/install-little-backup-box.sh | bash  2> install-error.log</code>
 	</li>
 	<li>
 		You will be asked if you want to install <a href="https://github.com/outdoorbits/mejiro">mejiro</a> and <a href="https://davesteele.github.io/comitup/">comitup</a>.<br>
