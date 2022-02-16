@@ -19,7 +19,7 @@ License: GPLv3 https://www.gnu.org/licenses/gpl-3.0.txt -->
 			ob_implicit_flush(true);
 			ob_end_flush();
 
-			$cmd = "cd ~pi; curl -sSL https://raw.githubusercontent.com/outdoorbits/little-backup-box/main/install-little-backup-box.sh | sudo -u pi bash";
+			$cmd = "cd ~pi; curl -sSL https://raw.githubusercontent.com/nfsboy/little-backup-box/main/install-little-backup-box.sh | sudo -u pi bash";
 
 			$descriptorspec = array(
 			0 => array("pipe", "r"),
