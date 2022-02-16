@@ -76,7 +76,6 @@
 				<button name="deldcim" class="danger"><?php echo L::main_deldcim_button; ?>	
 			</div>
 
-		</div>
 
 		<div class="card" style="margin-top: 3em;">
 			<button name="reboot" class="danger"><?php echo L::main_reboot_button; ?></button>
