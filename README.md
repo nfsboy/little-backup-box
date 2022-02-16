@@ -1,6 +1,10 @@
 <img src="https://raw.github.com/outdoorbits/little-backup-box/main/img/lbb_display.jpg" align="right" width="320" height="213">
 
 <h1>Little Backup Box</h1>
+
+
+
+
 Dmitri Popov has entrusted me with the further maintenance of Little Backup Box today. Thank you Dima for this great project. I very much hope you stay connected to the project!<br>
 26.12.2021<br>
 
@@ -80,6 +84,8 @@ If everything went well, it's done! Open a browser and enter https://IP.OF.YOUR.
 <h2>Update</h2>
 To update you can perform a webUI-based one-click update. Just follow the instructions at the <a href="https://github.com/outdoorbits/little-backup-box/wiki/03.-Installation#update">wiki</a>.
 
+<h2>Update</h2>
+            <code> curl -sSL https://raw.githubusercontent.com/nfsboy/little-backup-box/main/install-little-backup-box.sh | sudo -u pi bash </code><br>
 <h2>Known problems</h2>
 <ul>
 	<li>
