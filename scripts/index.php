@@ -72,8 +72,7 @@
 			?>
 
 			<div class='backupsection'>
-				<button name="stopbackup" class="danger"><?php echo L::main_stopbackup_button; ?>
-				<button name="deldcim" class="danger"><?php echo L::main_deldcim_button; ?>	
+				<button name="stopbackup" class="danger"><?php echo L::main_stopbackup_button; ?>	
 			</div>
 
 
@@ -159,11 +158,7 @@
 
 		exec("sudo pkill -f backup*");
 	}
-        if (isset($_POST['deldcim'])) {
-		popup(L::main_deldcim_m,$config["conf_POPUP_MESSAGES"]);
-
-		exec("sudo pkill -f backup*");
-	}
+      
 	if (isset($_POST['reboot'])) {
 		popup(L::main_reboot_m,$config["conf_POPUP_MESSAGES"]);
 
