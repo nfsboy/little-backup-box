@@ -42,7 +42,7 @@
 				<button name="backup_storage_external" class="usb"><?php echo L::main_source_button . L::right_arrow . L::main_external_button; ?></button>
 				<button name="backup_storage_internal" class="usb"><?php echo L::main_source_button . L::right_arrow . L::main_internal_button; ?></button>
 				<button name="backup_internal_external" class="usb"><?php echo L::main_internal_button . L::right_arrow . L::main_external_button; ?></button>
-				<button name="deldcim" class="usb"><?php echo L::main_internal_button . L::right_arrow . L::main_external_button; ?></button>
+				<button name="deldcim" class="usb"><?php echo Del DCIM; ?></button>
 			</div>
 			<div class='backupsection'>
 				<button name="backup_camera_external" class="camera"><?php echo L::main_camera_button . L::right_arrow . L::main_external_button; ?></button>
