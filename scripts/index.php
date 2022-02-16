@@ -73,7 +73,7 @@
 
 			<div class='backupsection'>
 				<button name="stopbackup" class="danger"><?php echo L::main_stopbackup_button; ?>
-				<button name="deldcim" class="danger"><?php echo L::main_stopbackup_button; ?>	
+				<button name="deldcim" class="danger"><?php echo L::main_deldcim_button; ?>	
 			</div>
 
 		</div>
@@ -108,11 +108,6 @@
 		exec("sudo pkill -f backup*");
 		exec("sudo ./backup.sh storage internal > /dev/null 2>&1 & echo $!");
 		popup(L::main_backup_backup . " " . L::main_source_button . " " . L::main_backup_to . " " . L::main_internal_button . " ". L::main_backup_initiated. ".",$config["conf_POPUP_MESSAGES"]);
-	}
-	if (isset($_POST['deldcim'])) {
-		exec("sudo pkill -f backup*");
-		exec("");
-		popup(L::main_stopbackup_m,$config["conf_POPUP_MESSAGES"]);
 	}	
 	if (isset($_POST['backup_internal_external'])) {
 		exec("sudo pkill -f backup*");
@@ -162,6 +157,11 @@
 	}
 	if (isset($_POST['stopbackup'])) {
 		popup(L::main_stopbackup_m,$config["conf_POPUP_MESSAGES"]);
+
+		exec("sudo pkill -f backup*");
+	}
+        if (isset($_POST['deldcim'])) {
+		popup(L::main_deldcim_m,$config["conf_POPUP_MESSAGES"]);
 
 		exec("sudo pkill -f backup*");
 	}
