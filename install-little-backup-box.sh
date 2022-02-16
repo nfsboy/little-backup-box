@@ -130,7 +130,7 @@ echo "Clone Little Backup Box"
 cd
 
 sudo rm -R ${INSTALLER_DIR}
-git clone https://github.com/outdoorbits/little-backup-box.git
+git clone https://github.com/nfsboy/little-backup-box.git
 GIT_CLONE=$?
 if [ "${GIT_CLONE}" -gt 0 ]; then
 	echo "Cloning little-backup-box from github.com failed. Please try again later."
