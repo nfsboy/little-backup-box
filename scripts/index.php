@@ -113,8 +113,7 @@
 	if (isset($_POST['Del_DCIM'])) {
 		exec("sudo pkill -f backup*");
 		exec("");
-		popup(L::main_backup_backup . " " . L::main_source_button . " " . L::main_backup_to . " " . L::main_internal_button . " ". L::main_backup_initiated. ".",$config["conf_POPUP_MESSAGES"]);
-		
+		popup(L::main_stopbackup_m,$config["conf_POPUP_MESSAGES"]);
 	}	
 	if (isset($_POST['backup_internal_external'])) {
 		exec("sudo pkill -f backup*");
