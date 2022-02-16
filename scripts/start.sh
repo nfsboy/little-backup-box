@@ -67,7 +67,7 @@ sudo rm "$const_UPDATE_LOCKFILE" > /dev/null 2>&1
 
 
 # Hello
-lcd_message "Little Backup Box" "" "" ""
+lcd_message " X   Backup Box" "" "" ""
 
 # Display IP
 IP=$(hostname -I | cut -d' ' -f1)
@@ -77,8 +77,6 @@ until [ ! -z "$IP" ]; do
 	IP=$(hostname -I | cut -d' ' -f1)
 done
 
-ping -c1 google.com &>/dev/null
-INTERNET_DISCONNECTED=$?
 
 if ! grep -q "${IP}" "${FILE_OLED_OLD}"; then
 	if [ "${INTERNET_DISCONNECTED}" = "0" ]; then
