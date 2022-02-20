@@ -223,7 +223,7 @@ sudo chmod 777 ${const_WEB_ROOT_LBB}/*
 # Display
 sudo apt-get install -y python3-pip python3-pil i2c-tools
 sudo pip3 install adafruit-circuitpython-ssd1306
-sudo raspi-config nonint do_i2c 0
+# sudo raspi-config nonint do_i2c 0 //for raspi
 
 # Enable OLED screen support if available
 ## append new line to config-file
